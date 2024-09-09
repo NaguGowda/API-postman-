@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "a16c4922-e4c3-4d5d-9638-44ad1421965d",
+		"name": "KerbosLogin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31025807"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "LREntry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseU}}/api/LREntry?pageSize=15&pageNumber=1",
+					"host": [
+						"{{BaseU}}"
+					],
+					"path": [
+						"api",
+						"LREntry"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "15"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 2,\r\n    \"GUID\": \"string\",\r\n    \"GoodConsignmentNo\": \"string\",\r\n    \"ConsignmentDate\": \"2023-11-07T10:42:49\",\r\n    \"TypeOfVehicle\": \"vvv\",\r\n    \"From\": \"2023-11-07T10:42:49\",\r\n    \"To\": \"2023-11-07T10:42:49\",\r\n    \"VehicleNumber\": \"string\",\r\n    \"InvoiceNumber\": \"string\",\r\n    \"InvoiceDate\": \"2023-11-07T10:42:49\",\r\n    \"InvoiceValue\": \"string\",\r\n    \"DriverName\": \"string\",\r\n    \"DriverMobileNumber\": \"string\",\r\n    \"RoadPermitNumber\": \"string\",\r\n    \"Mode\": \"string\",\r\n    \"Type\": \"string\",\r\n    \"ModeOfTransport\": \"string\",\r\n    \"ConsignmentNameAndAddress\": \"string\",\r\n    \"ConsigneeNameAndAddress\": \"string\",\r\n    \"ConsignorGSTNo\": \"string\",\r\n    \"ConsigneeGSTNo\": \"string\",\r\n    \"LiabilityOfServiceTaxConsignor\": \"string\",\r\n    \"LiabilityOfServiceTaxConsignee\": \"string\",\r\n    \"LiabilityOfServiceTaxCarrier\": \"string\",\r\n    \"LiabilityOfServiceTaxExempted\": \"string\",\r\n    \"NoOfPackages\": \"string\",\r\n    \"Description\": \"string\",\r\n    \"Rate\": \"string\",\r\n    \"ActualWeight\": \"string\",\r\n    \"HireCharge\": \"string\",\r\n    \"Mazdoori\": \"string\",\r\n    \"SurCharges\": \"string\",\r\n    \"Statistical\": \"string\",\r\n    \"RiskCharge\": \"string\",\r\n    \"ServiceTaxPercentage\": \"string\",\r\n    \"ServiceTaxAmount\": \"string\",\r\n    \"CessPercentage\": \"string\",\r\n    \"CessAmount\": \"string\",\r\n    \"GrandTotal\": \"string\",\r\n    \"Company\": \"string\",\r\n    \"PolicyNo\": \"string\",\r\n    \"Date\": \"2023-11-07T10:42:49\",\r\n    \"Amount\": \"string\",\r\n    \"Risk\": \"string\",\r\n    \"DeliveryStatus\": \"string\",\r\n    \"DeliveryCustomerReceivedDate\": \"2023-11-07T10:42:49\",\r\n    \"DeliveryCustomerReceivedTime\": \"string\",\r\n    \"GateEntryNumber\": \"string\",\r\n    \"BillSubmittedDate\": \"2023-11-07T10:42:49\",\r\n    \"BillSubmittedTime\": \"string\",\r\n    \"BillNo\": \"string\",\r\n    \"BillValue\": \"string\",\r\n    \"Active\": 1,\r\n    \"IsDeleted\": 0,\r\n    \"CreatedAt\": \"2023-11-07T16:12:01\",\r\n    \"CreatedBy\": 0,\r\n    \"UpdatedAt\": \"2023-11-07T16:12:59\",\r\n    \"UpdatedBy\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseU}}/api/LREntry",
+					"host": [
+						"{{BaseU}}"
+					],
+					"path": [
+						"api",
+						"LREntry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseU}}/api/LREntry/3?id=1",
+					"host": [
+						"{{BaseU}}"
+					],
+					"path": [
+						"api",
+						"LREntry",
+						"3"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseU}}/api/LREntry/3?id=3",
+					"host": [
+						"{{BaseU}}"
+					],
+					"path": [
+						"api",
+						"LREntry",
+						"3"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
